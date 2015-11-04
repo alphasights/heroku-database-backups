@@ -34,6 +34,7 @@ gzip $BACKUP_FILE_NAME
 
 if [ -n "$ALIVE_DB_URL" ]; then
   bundle exec im-alive $ALIVE_DB_URL $APP_DB_COMBO
+  echo "reported alive status to $APP_DB_COMBO"
 fi
 
 echo "backup $BACKUP_FILE_NAME complete"
