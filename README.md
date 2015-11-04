@@ -4,10 +4,12 @@ Simple heroku app with a bash script for capturing heroku database backups and c
 ## Installation
 
 
-First create a project on heroku with the [heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi).
+First create a project on heroku with the ruby (https://github.com/heroku/heroku-buildpack-ruby.git) and heroku buildpack https://github.com/gregburek/heroku-buildpack-toolbelt.git
 
 ```
-heroku create my-database-backups --buildpack https://github.com/ddollar/heroku-buildpack-multi
+heroku create my-database-backups
+heroku buildpacks:set https://github.com/gregburek/heroku-buildpack-toolbelt.git
+heroku buildpacks:add https://github.com/heroku/heroku-buildpack-ruby.git
 ```
 
 Next push this project to your heroku projects git repository.
