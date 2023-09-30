@@ -1,0 +1,26 @@
+GIT
+  remote: git://github.com/alphasights/im-alive.git
+  revision: 1b64f131d540795aada89ef9c475c9352c221855
+  specs:
+    im-alive (0.1.1)
+      couchrest (~> 2.0.0.rc2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    couchrest (2.0.0.rc2)
+      httpclient (~> 2.6.0)
+      mime-types (>= 1.15)
+      multi_json (~> 1.7)
+    httpclient (2.6.0.1)
+    mime-types (2.6.2)
+    multi_json (1.11.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  im-alive!
+
+BUNDLED WITH
+   1.10.6
